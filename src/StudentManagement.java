@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class StudentManagement {
 
-    // ✅ One Scanner for whole program
+    //  One Scanner for whole program
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -61,10 +61,10 @@ public class StudentManagement {
             pst.setString(3, dept);
 
             pst.executeUpdate();
-            System.out.println("✅ Student Added Successfully!");
+            System.out.println(" Student Added Successfully!");
 
         } catch (Exception e) {
-            System.out.println("❌ Error: " + e);
+            System.out.println(" Error: " + e);
         }
     }
 
@@ -83,7 +83,7 @@ public class StudentManagement {
             }
 
         } catch (Exception e) {
-            System.out.println("❌ Error: " + e);
+            System.out.println(" Error: " + e);
         }
     }
 
@@ -110,10 +110,10 @@ public class StudentManagement {
             pst.setInt(4, id);
 
             int count = pst.executeUpdate();
-            System.out.println(count > 0 ? "✅ Student Updated Successfully!" : "❌ Student ID Not Found!");
+            System.out.println(count > 0 ? " Student Updated Successfully!" : " Student ID Not Found!");
 
         } catch (Exception e) {
-            System.out.println("❌ Error: " + e);
+            System.out.println(" Error: " + e);
         }
     }
 
@@ -128,10 +128,10 @@ public class StudentManagement {
             pst.setInt(1, id);
 
             int count = pst.executeUpdate();
-            System.out.println(count > 0 ? "✅ Student Deleted Successfully!" : "❌ Student ID Not Found!");
+            System.out.println(count > 0 ? " Student Deleted Successfully!" : " Student ID Not Found!");
 
         } catch (Exception e) {
-            System.out.println("❌ Error: " + e);
+            System.out.println(" Error: " + e);
         }
     }
 }
